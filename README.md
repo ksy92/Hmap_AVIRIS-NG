@@ -6,7 +6,8 @@ This repository contains the source code, a matched dataset of depth and reflect
 
 ## Input Files
 
-The files `H_Rrs_df2021a_window_3.csv` and `H_Rrs_df2021b_window_3.csv` are matched datasets consisting of depth and reflectance spectra. These datasets were created using a sliding window-based pixel averaging technique during the DELTA-X spring and fall campaigns, respectively.
+The files `H_Rrs_df2021a_window_3.csv` and `H_Rrs_df2021b_window_3.csv` are matched datasets consisting of depth and reflectance spectra from the NASA's Delta-X mission spring and fall campaigns, respectively. The reflectance spectra were filted using a sliding window-based pixel averaging (window size=3).
+
 
 ## Code Description
 
@@ -14,4 +15,4 @@ The script `WLD_DEPTH_MAPPING_REGRESSION.py` includes the processes for training
 
 ## Acknowledgments and Disclaimer
 
-The source code was developed by Siyoon Kwon. This work has been supported by the NASA Delta-X project, which is funded by the Science Mission Directorate's Earth Science Division through the Earth Venture Suborbital-3 Program (NNH17ZDA001
+The source code was developed by Siyoon Kwon. This work has been supported by the NASA Delta-X project, which is funded by the Science Mission Directorate's Earth Science Division through the Earth Venture Suborbital-3 Program (NNH17ZDA001N-EVS3), and by the National Research Foundation of Korea (NRF) grant funded by the Korean government (MSIT) under grant number RS-2023-00209539.
