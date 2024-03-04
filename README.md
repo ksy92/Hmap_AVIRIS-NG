@@ -6,14 +6,14 @@ This repository contains the source code, a matched dataset of depth and reflect
 
 ## Input Files
 
-The files `H_Rrs_df2021a_window_3.csv` and `H_Rrs_df2021b_window_3.csv` are matched datasets consisting of depth and reflectance spectra from the NASA's Delta-X mission spring and fall campaigns, respectively. The reflectance spectra were filted using a sliding window-based pixel averaging (window size=3).
-
+The files `H_Rrs_df2021a_window_3.csv` and `H_Rrs_df2021b_window_3.csv` are matched datasets consisting of depth and reflectance spectra from the NASA's Delta-X mission spring and fall campaigns, respectively. The reflectance spectra were filted using a sliding window-based pixel averaging (window size=3x3). All spectral bands, covering a wavelength range from 446 nm to 897 nm, are indexed from 1 to 91.
 
 ## Code Description
 
 The script `WLD_DEPTH_MAPPING_REGRESSION.py` includes the processes for training, testing, and band selection using Recursive Feature Elimination with Cross-Validation (RFE-CV) for both Partial Least Squares Regression (PLSR) and Random Forest (RF) regressors. The script `WLD_DEPTH_MAPPING_FUNCTIONS.py` provides essential functions required to run the regression code.
 
 ## Model Description
+
 The file `H_RF_DELTA_X_total_win3.zip` contains the final RF-RFE (Random Forest-Recursive Feature Elimination) model, which has been trained using a combined dataset from both the Spring and Fall campaigns. This model has been identified as the optimal regressor for this study. Additionally, `H_rfeindex_total_RF_win3.npy` is a binary array that indicates the spectral bands selected for use with the RF-RFE model.
 
 ## Acknowledgments and Disclaimer
