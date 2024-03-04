@@ -1,0 +1,1 @@
+These files contain the source code, a matched dataset of depth and reflectance spectra from AVIRIS-NG, and the RF-RFE model pickle file. They were used for the study 'Depth Mapping in Turbid and Deep Waters Using AVIRIS-NG Imagery: A Study in Wax Lake Delta, Louisiana, USA.' (Kwon et al., in preparation).
