@@ -18,4 +18,4 @@ The file `H_RF_DELTA_X_total_win3.zip` contains the final RF-RFE (Random Forest-
 
 ## Acknowledgments and Disclaimer
 
-The source code was developed by Siyoon Kwon. This work has been supported by the NASA Delta-X project, which is funded by the Science Mission Directorate's Earth Science Division through the Earth Venture Suborbital-3 Program (NNH17ZDA001N-EVS3), and by the National Research Foundation of Korea (NRF) grant funded by the Korean government (MSIT) under grant number RS-2023-00209539.
+The source code was developed by Siyoon Kwon. This work has been supported by the NASA Delta-X project, which is funded by the Science Mission Directorate's Earth Science Division through the Earth Venture Suborbital-3 Program (NNH17ZDA001N-EVS3), and by the National Research Foundation of Korea (NRF) grant funded by the Korean government (MSIT) under grant number RS-2023-00209539. The author does not guarantee any warranty or technical support for this repository.
