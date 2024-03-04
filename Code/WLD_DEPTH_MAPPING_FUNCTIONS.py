@@ -49,8 +49,6 @@ def RFECV_RF(X,Y, step, cv, estimator, n_jobs):
 
 def RFECV_PLSR(X,Y, step, cv, estimator):
 
-    # step = 1
-    # cv = 5
     scoring="neg_mean_squared_error"
     n_features_to_select = 91
     estimator = PLSRegression(n_components=n_features_to_select)   
@@ -76,7 +74,7 @@ def RFECV_PLSR(X,Y, step, cv, estimator):
     ranking_ = rfe.ranking_
     rfeindex = np.where(support_ == True)[0]
     dset = pd.DataFrame()
-    dset['attr'] = X.columns
+    dset['attr'] = np.arange(len(X[0,:]))
     dset['selection'] = rfe.support_
     dset['importance'] = estimator.score(X, Y)
     return dset, rfeindex
