@@ -100,7 +100,7 @@ cv = 5 #cross-validation fold
 step = 1 #step to test features
 
 if model_opt == '1':  
-    dset, rfeindex = RFECV_PLSR(X,Y, step, cv, estimator)
+    dset, rfeindex = RFECV_PLSR(X,Y, step, cv, estimator)#dset contains information on feature importance and indicates whether each feature was selected.
     model = 'PLSR'
 elif model_opt == '2':  
     dset, rfeindex = RFECV_RF(X,Y, step, cv, estimator)
